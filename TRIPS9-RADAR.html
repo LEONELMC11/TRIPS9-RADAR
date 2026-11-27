@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRIPS9 RADAR</title>
+<style>
+:root{color-scheme:dark;--bg:#10091d;--panel:#1d1230;--line:#392451;--purple:#a855f7;--pink:#d8b4fe;--muted:#b9a9c9}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top,#38205a 0,#160d25 45%,#0d0815 100%);color:#fff;min-height:100vh}
+main{max-width:900px;margin:auto;padding:28px 18px 50px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-weight:900;letter-spacing:1.5px;font-size:23px}.pill{border:1px solid #6d3a91;background:#321b49;color:#e9d5ff;border-radius:99px;padding:7px 12px;font-size:12px}
+h1{font-size:clamp(32px,7vw,54px);margin:36px 0 8px;letter-spacing:-1px}.sub{color:var(--muted);margin:0 0 25px}
+.notice{background:#21152e;border:1px solid var(--line);border-radius:14px;padding:13px 15px;color:#d9c8e9;font-size:13px;line-height:1.5;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}.card{background:linear-gradient(145deg,#251638,#1a1028);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 12px 35px #0003}
+.card h2{font-size:17px;margin:0 0 16px}.egg{font-size:42px}.status{display:inline-block;background:#3b2450;color:#e9d5ff;padding:6px 10px;border-radius:8px;font-size:12px}
+.big{font-size:25px;font-weight:800;margin:8px 0}.muted{color:var(--muted);font-size:13px;line-height:1.5}
+button{border:0;border-radius:11px;padding:12px 15px;background:linear-gradient(90deg,#9333ea,#6d28d9);color:white;font-weight:800;cursor:pointer;width:100%;margin-top:14px}
+button.secondary{background:#30203f;border:1px solid #56376e}button:focus{outline:2px solid #e9d5ff;outline-offset:3px}
+.row{display:flex;justify-content:space-between;gap:10px;margin:12px 0;color:#e8dcf3;font-size:14px}
+footer{text-align:center;color:#9e8bad;font-size:12px;margin-top:24px}
+@media(max-width:650px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body><main>
+<div class="top"><div class="brand">💜 TRIPS9 RADAR</div><span class="pill">PROTOTIPO</span></div>
+<h1>🥚 HUEVOS DIVINOS</h1><p class="sub">Radar comunitario para Steal a Brainrot</p>
+<div class="notice"><b>Importante:</b> esta primera versión es una maqueta visual. Todavía no detecta huevos ni servidores en vivo. Para activar alertas reales necesitamos una fuente de datos fiable y permitida para el juego.</div>
+<div class="grid">
+<section class="card">
+<h2>Radar de apariciones</h2><div class="egg">🥚✨</div><span class="status">DEMO · SIN DATOS EN VIVO</span>
+<div class="big">Esperando información…</div><p class="muted">Cuando conectemos una fuente real, acá aparecerá el huevo detectado y la hora del aviso.</p>
+<button onclick="alert('La conexión con los datos del juego todavía no está configurada.')">ACTUALIZAR RADAR</button>
+</section>
+<section class="card">
+<h2>Acceso al servidor</h2>
+<div class="row"><span>Servidor</span><b>Sin identificar</b></div>
+<div class="row"><span>Jugadores</span><b>— / —</b></div>
+<div class="row"><span>Estado</span><b>Esperando datos</b></div>
+<button class="secondary" onclick="alert('El botón JOIN se activará cuando tengamos el enlace válido del servidor.')">JOIN SERVER</button>
+<p class="muted">El acceso directo solo funcionará si el juego o una fuente autorizada proporciona el enlace del servidor.</p>
+</section>
+</div>
+<section class="card" style="margin-top:16px">
+<h2>🔔 Próximo paso</h2><p class="muted">Conectar una fuente de información que publique cuándo aparece un huevo divino y, si está disponible, el identificador del servidor. Después podremos agregar notificaciones del navegador.</p>
+</section>
+<footer>Creado por TRIPLE 9 · TRIPS9 RADAR</footer>
+</main></body></html>
